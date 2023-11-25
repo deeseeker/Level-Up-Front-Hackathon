@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="nav-bar__item nav-bar__item--logo">
+        <img src="img/shopify.svg" alt="Shopify Logo" tabindex="0"  role="button" aria-label="shopify"/>
+      </div>
+      <form class="nav-bar__item nav-bar__item--searchbox" tabindex="0"  role="button" aria-label="search box">
+        <img class="searchbox__icon" src="img/search.svg" alt="Search Icon" />
+        <input class="searchbox__input" type="text" placeholder="Search" />
+      </form>
+
+      <div  class="nav-bar__item nav-bar__item--notification">
+        <img tabindex="0"  role="button" aria-label="notification" class="notification__bell" src="img/notification.svg" alt="Notification Bell" />
+        <div class="notification__dropdown hidden" aria-hidden="true" role="region">
+          <div class="dropdown__item">
+            <span class="dropdown__item--alert">Alerts</span>
+            <div>
+              <img class="icon-filter icon" src="https://crushingit.tech/hackathon-assets/icon-filter.svg" alt="Filter Icon">
+              <img class="icon-check-empty-circle icon" src="https://crushingit.tech/hackathon-assets/icon-check-empty-circle.svg" alt="Check Empty Circle Icon">
+            </div>
+          </div>
+          <div class="dropdown__item--message">
+            <p >Alerts about your store and account will show here.</p>
+          </div>
+        </div>
+        <div class="nav-bar__item nav-bar__item--collections" tabindex="0" role="button">
+          <div class="collections-box__name">Davii Collections</div>
+          <div class="collections-box__logo">DC</div>
+        </div>
+        
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="plan-container">
+      <p>Extend your trial for $1/month for 3months on select plans</p>
+      <div class="plan-button__wrapper">
+          <button class="plan-button" aria-label="Select a plan">Select a plan</button>
+          <img class="cancel-button" src="img/cancel.svg" alt="Cancel" tabindex="0"  role="button" aria-label="Cancel"/>
+        </div>
+      </div>
+      <div class="setup-container">
+        <div class="setup-header__wrapper">
+          <div class="setup-header">
+            <h2>Setup guide</h2>
+            <img class="dropup-icon"
+            src="img/dropup.svg" alt="Dropup Icon">
+
+          </div>
+          <p>Use this personalized guide to get your store up and running.</p>
+          <span>1/5 completed</span>
+          <span class="meter">
+            <span></span>
+          </span>
+          
+        </div>
+        <div  class="guide-block">
+          <img class= "progress-icon" src="img/progress.svg" alt="Progress Icon">
+          <div>
+            <h2>Customize your online store</h2>
+            <p>Your current domain is 222219.myshopify.com but you can add a custom domain to help customers find your online store. </p>
+            <div class="learn-more">Learn more</div>
+            <button class="guide-btn" aria-label="Customize theme">Customize theme</button>
+          </div>
+          <div>
+            <img class="guide-illustration" src="https://crushingit.tech/hackathon-assets/customise-store.png" alt="Customize Store Illustration">
+
+          </div>
+        </div>
+        <div  class="guide-block">
+          <img class= "progress-icon" src="img/progress.svg" alt="progress-icon">
+          <div>
+            <h2>Add your first product</h2>
+            <p>Your current domain is 222219.myshopify.com but you can add a custom domain to help customers find your online store. </p>
+            <div class="learn-more">Learn more</div>
+            <button class="guide-btn" aria-label="Add your first product">Add your first product</button>
+          </div>
+          <div>
+            <img class="guide-illustration" src="https://crushingit.tech/hackathon-assets/product.png" alt="product">
+
+          </div>
+        </div>
+        <div  class="guide-block">
+          <img class= "progress-icon" src="img/progress.svg" alt="progress-icon">
+          <div>
+            <h2>Add a custom domain</h2>
+            <p>Your current domain is 222219.myshopify.com but you can add a custom domain to help customers find your online store. </p>
+            <div class="learn-more">Learn more</div>
+            <button class="guide-btn" aria-label="Add domain">Add domain</button>
+          </div>
+          <div>
+            <img class="guide-illustration" src="https://crushingit.tech/hackathon-assets/website.png" alt="website-icon">
+
+          </div>
+        </div>
+        <div  class="guide-block">
+          <img class= "progress-icon" src="img/progress.svg" alt="progress-icon">
+          <div>
+            <h2>Name your store</h2>
+            <p>Your temporary store name is currently Davii collections. The store name appears in your admin and your online store. </p>
+            <div class="learn-more">Learn more</div>
+            
+            <button class="guide-btn" aria-label="Name store">Name store</button>
+          </div>
+          <img class="guide-illustration" src="https://crushingit.tech/hackathon-assets/name-store.png" alt="name-store">
+        </div>
+        <div  class="guide-block">
+          <img class= "progress-icon" src="img/progress.svg" alt="progress-icon">
+          <div>
+            <h2>Set up a payment provider</h2>
+            <p>Choose a payment provider to start accepting payments. You'll need to create an account with the payment provider and set it up with your Shopify store. </p>
+            <div class="learn-more">Learn more</div>
+            <button class="guide-btn" aria-label="Set up payment">Set up payment</button>
+          </div>
+          <img class="guide-illustration" src="https://crushingit.tech/hackathon-assets/payment.png" alt="payment">
+        </div>
+      </div>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>

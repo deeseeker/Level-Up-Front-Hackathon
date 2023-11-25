@@ -1,0 +1,337 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+  font-weight: 500;
+  letter-spacing: 0em;
+  /* background-color: blanchedalmond; */
+}
+
+body {
+  background: #dbdbdb;
+}
+
+/*Nav Bar */
+.nav-bar {
+  background: #1a1a1a;
+  display: flex;
+  height: 56px;
+  padding: 12px 16px 12px 16px;
+  justify-content: space-between;
+}
+
+/* Nav Bar Shopify Logo*/
+
+.nav-bar__item--logo {
+  width: 464px;
+  height: 30px;
+  cursor: pointer;
+}
+
+/* Nav Bar SearchBox*/
+.nav-bar__item--searchbox {
+  display: flex;
+  width: 480px;
+  height: 32px;
+  padding: 8px;
+  border-radius: 8px;
+  background: linear-gradient(0deg, #616161, #616161),
+    linear-gradient(0deg, #303030, #303030);
+  border: 1px solid #616161;
+  align-items: center;
+}
+
+.nav-bar__item--searchbox:focus {
+  outline: 1px solid #ffffff;
+}
+.searchbox__icon {
+  width: 20px;
+  height: 20px;
+  padding: 3.5px;
+}
+.searchbox__input {
+  border: none;
+  outline: none;
+  flex: 1;
+  color: #fff;
+  background: none;
+  width: 44px;
+  height: 18px;
+}
+
+/* Nav Bar Notification*/
+.nav-bar__item--notification {
+  width: 464px;
+  height: 32px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.notification__bell {
+  width: 32px;
+  height: 32px;
+  padding: 6px;
+  border-radius: 8px;
+  background: #303030;
+  cursor: pointer;
+}
+
+.notification__bell:focus {
+  outline: 2px solid #005bd3;
+}
+
+.notification__dropdown {
+  width: 383px;
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px;
+  background: #ffffff;
+  position: absolute;
+  right: 4px;
+  top: 64px;
+}
+/*Nav Bar Notification dropdown*/
+.hidden {
+  display: none;
+}
+
+.dropdown__item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  filter: invert(37%) sepia(4%) saturate(9%) hue-rotate(324deg) brightness(96%)
+    contrast(86%);
+}
+
+.dropdown__item--message {
+  padding: 16px;
+  background: #f1f1f1;
+  color: #616161;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+/*Nav Bar Collections Box*/
+.nav-bar__item--collections {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  width: 142px;
+  height: 32px;
+  padding: 2px 2px 2px 8px;
+  border-radius: 8px;
+  background: #303030;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.collections-box__name {
+  color: #e3e3e3;
+  padding: 8px 0;
+}
+.collections-box__logo {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background: #36fba1;
+  text-align: center;
+  padding: 5px 9px;
+}
+
+.nav-bar__item--collections:focus {
+  outline: 2px solid #005bd3;
+}
+/* Main section*/
+main {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  flex-direction: column;
+}
+
+.plan-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 800px;
+  height: 56px;
+  padding: 12px 8px 12px 16px;
+  border-radius: 8px;
+  background: #1a1a1a;
+  color: #e3e3e3;
+}
+
+.plan-container p {
+  font-size: 13px;
+  line-height: 18px;
+  text-align: left;
+}
+
+.plan-button__wrapper {
+  width: 139px;
+  height: 32px;
+  text-align: left;
+  color: #323232;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.plan-button {
+  width: 99px;
+  height: 28px;
+  padding: 6px 12px 6px 12px;
+  border-radius: 6px;
+  border: 1px;
+  background: linear-gradient(0deg, #ffffff, #ffffff),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  cursor: pointer;
+}
+.cancel-button {
+  width: 32px;
+  height: 32px;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+/* set up*/
+.setup-container {
+  /* width: 800px;
+  height: 431px; */
+  padding: 8px;
+  border-radius: 18px;
+  border: 1px;
+  background: #ffffff;
+  margin-top: 16px;
+}
+.setup-header__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 784px;
+  height: 90px;
+  padding: 8px;
+}
+
+.setup-header {
+  display: flex;
+  justify-content: space-between;
+}
+.setup-header h2 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #303030;
+}
+.setup-header__wrapper p,
+.setup-header__wrapper span {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #303030;
+}
+
+.dropup-icon {
+  width: 28px;
+  height: 28px;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.setup-header p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.meter {
+  /* Can be anything */
+  width: 72px;
+  height: 4px;
+  padding: 0px 54px 0px 0px;
+  border-radius: 28px;
+  background: #555;
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+}
+
+/* .meter > span {
+  height: 100%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: rgb(43, 194, 83);
+  background-image: linear-gradient(
+    center bottom,
+    rgb(43, 194, 83) 37%,
+    rgb(84, 240, 84) 69%
+  );
+  box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
+    inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+} */
+
+.guide-block {
+  width: 784px;
+  height: 141px;
+  padding: 8px 8px 12px 8px;
+  border-radius: 10px;
+  display: flex;
+  background: #f3f3f3;
+  margin-bottom: 10px;
+}
+
+.guide-block h2 {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #303030;
+}
+
+.guide-block p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #616161;
+}
+
+.learn-more {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #005bd3;
+}
+.progress-icon {
+  width: 24px;
+  height: 24px;
+  padding: 2px;
+  filter: invert(52%) sepia(85%) saturate(0%) hue-rotate(231deg) brightness(89%)
+    contrast(81%);
+}
+.guide-illustration {
+  width: 156px;
+  height: 120px;
+}
+
+.guide-btn {
+  width: fit-content;
+  height: fit-content;
+  padding: 6px 12px 6px 12px;
+  border-radius: 6px;
+  border: 1.5px 1.5px 0px 1.5px;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    linear-gradient(0deg, #404040, #404040);
+}
